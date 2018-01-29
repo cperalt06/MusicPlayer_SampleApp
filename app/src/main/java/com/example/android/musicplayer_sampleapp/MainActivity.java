@@ -8,12 +8,12 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
+    final MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.seth_power_fire);
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        final MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.seth_power_fire);
 
         Button playButton = findViewById(R.id.play_button);
         playButton.setOnClickListener(new View.OnClickListener() {
